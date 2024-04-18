@@ -1,5 +1,5 @@
 # Avalonia.Desktop-RegisterKey
-Дерма карета 
+Р”РµСЂРјР° РєР°СЂРµС‚Р° 
 # Files 
 ``` 
 1. cpp library - dll_lib.cpp
