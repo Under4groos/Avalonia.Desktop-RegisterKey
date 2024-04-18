@@ -1,6 +1,8 @@
 # Avalonia.Desktop-RegisterKey
 Дерма карета 
 
+
+# Cs class Key bind
 ```cs
 public class HotKeyBind
 {
@@ -26,6 +28,26 @@ public class HotKeyBind
             }
         }).Start();
 
+    }
+}
+```
+
+# MainWindow 
+```cs
+public partial class MainWindow : Window
+{
+    private HotKeyBind hotKeyBind;
+    public MainWindow()
+    {
+        InitializeComponent(); 
+    }
+    protected override void OnLoaded(RoutedEventArgs e)
+    {
+        hotKeyBind = new HotKeyBind(WinFormKeys.Z, (bool status) =>
+        {
+            Debug.WriteLine($"Hwnd: {this.GetHwndSource()}");
+        });
+        base.OnLoaded(e);
     }
 }
 ```
