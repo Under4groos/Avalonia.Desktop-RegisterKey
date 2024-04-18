@@ -1,5 +1,16 @@
-# Avalonia.Desktop-RegisterKey
+# Avalonia.Desktop-RegisterKey ( Using Windows 11)
 Дерма карета 
+
+# Build
+```
+1. dll_lib.cpp compile to WinShellLib.dll
+2. Copy WinShellLib.dll from application (.exe)
+
+```
+
+
+
+
 
 ```cs
 public class HotKeyBind
