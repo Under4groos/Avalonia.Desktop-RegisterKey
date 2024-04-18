@@ -1,8 +1,6 @@
 # Avalonia.Desktop-RegisterKey
 Дерма карета 
 
-
-# Cs class Key bind
 ```cs
 public class HotKeyBind
 {
