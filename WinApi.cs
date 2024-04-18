@@ -17,6 +17,8 @@ public static bool RegisterHotKeyBind(IntPtr hWnd, key_Modifiers fsModifiers, Wi
 {
     return RegisterHotKey(hWnd, 0, (int)fsModifiers, (int)vk);
 }
+
+// using WInFormKeys 
 [DllImport(Lib.WinShellLib)]
 public static extern bool _RegisterHotKey(IntPtr hWnd, int nIndex, int vk);
 public static bool _RegisterHotKeyBind(IntPtr hWnd, int nIndex, WinFormKeys vk)
